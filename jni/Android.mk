@@ -21,7 +21,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 # This is the target being built.
-LOCAL_MODULE:= libjackpal-androidterm4
+LOCAL_MODULE:= libjackpal-androidterm5
 
 # All of the source files that we will compile.
 LOCAL_SRC_FILES:= \
@@ -29,6 +29,6 @@ LOCAL_SRC_FILES:= \
   termExec.cpp \
   fileCompat.cpp
 
-LOCAL_LDLIBS := -ldl -llog
+LOCAL_LDLIBS := -Wl,-ldl -Wl,-llog
 
 include $(BUILD_SHARED_LIBRARY)
